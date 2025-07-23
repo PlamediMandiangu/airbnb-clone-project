@@ -300,6 +300,52 @@ Only registered users can access certain endpoints using secure methods such as 
 
 
 
+
+
+CI/CD Pipeline
+
+Continuous Integration and Continuous Deployment (CI/CD) pipelines automate the process of testing, building, and deploying code. This ensures that new features, bug fixes, and updates are delivered quickly, safely, and consistently without manual intervention.
+
+
+
+In this project, a CI/CD pipeline helps:
+
+
+
+Automatically test code to catch bugs early.
+
+
+
+Build and deploy new versions of the Airbnb Clone without downtime.
+
+
+
+Maintain a consistent environment across development, staging, and production.
+
+
+
+Tools for CI/CD:
+
+GitHub Actions: Automates testing and deployment workflows directly from the GitHub repository.
+
+
+
+Docker: Containerizes the application to ensure it runs the same way on every machine.
+
+
+
+Docker Hub or GitHub Container Registry: Stores and distributes Docker images.
+
+
+
+Heroku / Vercel / AWS / Railway: Used for deployment in cloud environments.
+
+
+
+By using CI/CD, the team can focus more on writing high-quality code while the pipeline handles the repetitive and error-prone tasks.
+
+
+
 2\. Authorization
 
 Once authenticated, users are granted permissions based on their roles (e.g., guest, host, admin). This ensures that a user can only perform actions that they’re allowed to—such as a guest booking a property but not deleting someone else’s listing.
