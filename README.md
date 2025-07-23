@@ -50,3 +50,53 @@
 
 # Oversees the security of the application. Conducts vulnerability assessments, ensures secure authentication and data protection practices are followed.
 
+
+
+
+
+\## Technology Stack
+
+
+
+\### 1. Django
+
+A high-level Python web framework used to build the backend logic of the application, including handling user requests, authentication, and serving data via RESTful APIs.
+
+
+
+\### 2. PostgreSQL
+
+An open-source relational database system used to store user data, property listings, bookings, and other structured data securely.
+
+
+
+\### 3. HTML, CSS, JavaScript
+
+Used to build the frontend of the web application. HTML structures the content, CSS styles it, and JavaScript adds interactivity.
+
+
+
+\### 4. Bootstrap
+
+A frontend CSS framework that helps create responsive, mobile-friendly layouts quickly.
+
+
+
+\### 5. Git \& GitHub
+
+Version control system (Git) and hosting platform (GitHub) used for tracking changes in code and collaborating with the development team.
+
+
+
+\### 6. Docker (if used)
+
+Used to containerize the application, making it easier to deploy across different environments consistently.
+
+
+
+\### 7. GraphQL (if used)
+
+An API query language that allows the client to request only the data it needs, improving performance and flexibility compared to traditional REST APIs.
+
+
+
