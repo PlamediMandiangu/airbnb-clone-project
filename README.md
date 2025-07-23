@@ -282,3 +282,67 @@ Allows users to search for properties using filters like location, price range, 
 
 Provides administrative users with tools to monitor platform activity, manage users, and remove inappropriate listings or reviews. This ensures the overall health and safety of the application
 
+
+
+
+
+
+
+API Security
+
+Securing the backend APIs is critical to protect sensitive user data and ensure the overall integrity of the Airbnb Clone platform. Below are the key security measures implemented:
+
+
+
+1\. Authentication
+
+Only registered users can access certain endpoints using secure methods such as JWT (JSON Web Tokens). Authentication ensures that users are who they claim to be, preventing unauthorized access to protected resources.
+
+
+
+2\. Authorization
+
+Once authenticated, users are granted permissions based on their roles (e.g., guest, host, admin). This ensures that a user can only perform actions that they’re allowed to—such as a guest booking a property but not deleting someone else’s listing.
+
+
+
+3\. Rate Limiting
+
+To prevent abuse and denial-of-service (DoS) attacks, the API will limit the number of requests from a single IP address over a period of time. This helps protect the server from being overwhelmed by excessive traffic.
+
+
+
+4\. Data Validation \& Sanitization
+
+All incoming data is validated and sanitized to prevent injection attacks (e.g., SQL injection, XSS). This protects the database and frontend from malicious input.
+
+
+
+5\. HTTPS \& Secure Headers
+
+The API communicates over HTTPS to encrypt data in transit. Additionally, secure HTTP headers (like Content-Security-Policy and X-Content-Type-Options) are used to enhance browser-level security.
+
+
+
+6\. Sensitive Data Protection
+
+Sensitive information such as passwords and payment details are hashed or tokenized and never stored in plain text. This helps reduce the impact in case of a data breach.
+
+
+
+Why API Security Is Crucial:
+
+🔒 Protecting User Data – Ensures personal and financial data remains private and secure.
+
+
+
+🏦 Securing Payments – Prevents fraud and unauthorized transactions.
+
+
+
+🚫 Preventing Abuse – Keeps the platform safe from bots, spam, and brute-force attacks.
+
+
+
+✅ Maintaining Trust – Security builds confidence among users and hosts.
+
