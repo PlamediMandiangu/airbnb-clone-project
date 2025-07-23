@@ -240,3 +240,45 @@ This project uses a relational database to store and manage core data entities. 
 
 
 
+Feature Breakdown
+
+🧑‍💼 User Management
+
+Allows users to sign up, log in, and manage their profiles securely. This feature enables authentication and authorization, ensuring that users can access their own data and perform actions based on their role (guest or host).
+
+
+
+🏠 Property Management
+
+Hosts can list properties by uploading details such as photos, descriptions, pricing, and availability. This feature is essential for adding accommodations and managing listings on the platform.
+
+
+
+📅 Booking System
+
+Users can search for available properties and make reservations based on date and availability. This system handles booking logic, availability checks, and confirmation workflows.
+
+
+
+💳 Payment Integration
+
+Enables secure payment processing for bookings. This feature ensures that users can pay for stays using payment gateways, and hosts can receive payouts.
+
+
+
+⭐ Review and Rating System
+
+After completing a stay, guests can leave reviews and ratings. This helps maintain trust in the community and gives other users insight into the quality of listings and hosts.
+
+
+
+🔍 Search and Filter
+
+Allows users to search for properties using filters like location, price range, date, number of guests, and amenities. This makes it easier to find relevant listings based on preferences.
+
+
+
+📊 Admin Dashboard
+
+Provides administrative users with tools to monitor platform activity, manage users, and remove inappropriate listings or reviews. This ensures the overall health and safety of the application
+
