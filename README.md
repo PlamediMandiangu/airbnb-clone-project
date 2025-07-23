@@ -100,3 +100,143 @@ An API query language that allows the client to request only the data it needs, 
 
 
 
+
+
+\## Database Design
+
+
+
+This project uses a relational database to store and manage core data entities. Below are the key entities, their attributes, and relationships:
+
+
+
+\### 1. Users
+
+\- `id`: Unique identifier
+
+\- `name`: Full name
+
+\- `email`: Email address
+
+\- `password\_hash`: Encrypted password
+
+\- `role`: (e.g., guest, host)
+
+
+
+🔁 \*\*Relationships\*\*:  
+
+\- A user can own multiple properties  
+
+\- A user can make multiple bookings  
+
+\- A user can leave multiple reviews  
+
+
+
+---
+
+
+
+\### 2. Properties
+
+\- `id`: Unique identifier
+
+\- `title`: Property name or listing title
+
+\- `description`: Detailed description
+
+\- `location`: Address or geographic coordinates
+
+\- `price\_per\_night`: Rate per night
+
+
+
+🔁 \*\*Relationships\*\*:  
+
+\- A property belongs to one user (host)  
+
+\- A property can have multiple bookings  
+
+\- A property can have multiple reviews  
+
+
+
+---
+
+
+
+\### 3. Bookings
+
+\- `id`: Unique identifier
+
+\- `user\_id`: Guest making the booking
+
+\- `property\_id`: The property being booked
+
+\- `check\_in\_date`: Start date
+
+\- `check\_out\_date`: End date
+
+
+
+🔁 \*\*Relationships\*\*:  
+
+\- A booking is linked to one user (guest)  
+
+\- A booking is linked to one property  
+
+
+
+---
+
+
+
+\### 4. Reviews
+
+\- `id`: Unique identifier
+
+\- `user\_id`: Reviewer (guest)
+
+\- `property\_id`: Property being reviewed
+
+\- `rating`: Numeric score
+
+\- `comment`: Review message
+
+
+
+🔁 \*\*Relationships\*\*:  
+
+\- A review is written by a user for a property  
+
+\- A property can have multiple reviews  
+
+
+
+---
+
+
+
+\### 5. Payments
+
+\- `id`: Unique identifier
+
+\- `user\_id`: Who made the payment
+
+\- `booking\_id`: Related booking
+
+\- `amount`: Total paid
+
+\- `status`: (e.g., completed, pending)
+
+
+
+🔁 \*\*Relationships\*\*:  
+
+\- A payment is tied to a specific booking  
+
+\- A payment is made by a user  
+
+
+
